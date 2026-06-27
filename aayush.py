@@ -1,3 +1,8 @@
 print("helloworld")
 
 print("aayush")
+
+a=10
+b=12
+
+print(a**b)
