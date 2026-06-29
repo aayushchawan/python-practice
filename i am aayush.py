@@ -66,6 +66,28 @@ age += 1
 
 #can i put such constraints that i can say you are old if above 45 and you are young iif answer is below 45
 print(f"you are {age} years old")
+name = input("Enter your name: ")
+age = input("Enter your age: ")
+weight = input("Enter your weight (in kg): ")
+
+# Type casting
+age = int(age)
+weight = float(weight)
+
+# Data card
+print(f"\n--- APPLICANT DATA ---")
+print(f"Name  : {name}")
+print(f"Age   : {age}")
+print(f"Weight: {int(weight)} kg")
+print(f"Weight data type: {type(weight)}")
+
+# Booleans
+is_old_enough = age >= 18
+is_weight_ok = weight <= 90.0
+
+print(f"\nAge eligible    : {is_old_enough}")
+print(f"Weight eligible : {is_weight_ok}")
+
 
     
 
