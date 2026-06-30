@@ -88,6 +88,18 @@ is_weight_ok = weight <= 90.0
 print(f"\nAge eligible    : {is_old_enough}")
 print(f"Weight eligible : {is_weight_ok}")
 
+name = "Aayush"      # string
+age = 18              # integer
+height = 5.9          # float
+is_student = True     # boolean
+
+print(name, age, height, is_student)
+
+# reassign anytime, no type declaration needed
+age = 19
+
+# multiple assignment in one line
+x, y, z = 1, 2, 3
 
     
 
