@@ -101,6 +101,18 @@ age = 19
 # multiple assignment in one line
 x, y, z = 1, 2, 3
 
+# Taking input from user
+name = input("Enter your name: ")
+age = input("Enter your age: ")
+
+# Printing the input
+print("Hello,", name)
+print("You are", age, "years old")
+
+age = int(input("Enter your age: "))
+next_year = age + 1
+print("Next year you'll be", next_year)
+
     
 
 
