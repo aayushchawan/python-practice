@@ -113,6 +113,16 @@ age = int(input("Enter your age: "))
 next_year = age + 1
 print("Next year you'll be", next_year)
 
+# Taking input and using it in a condition
+name = input("Enter your name: ")
+age = int(input("Enter your age: "))
+
+if age >= 18:
+    print(name, "you are an adult.")
+else:
+    print(name, "you are a minor.")
+
+
     
 
 
