@@ -123,6 +123,28 @@ else:
     print(name, "you are a minor.")
 
 
+    def get_valid_age():
+        while True:
+            try:
+                age = int(input("Enter your age: "))
+                return age
+            except ValueError:
+                print("That's not a number, try again.")
+
+
+    name = input("Enter your name: ")
+    age = get_valid_age()
+
+    hobbies = []
+    num = int(input("How many hobbies do you have? "))
+
+    for i in range(num):
+        hobby = input(f"Enter hobby {i + 1}: ")
+        hobbies.append(hobby)
+
+    print(f"\n{name}, age {age}, enjoys: {', '.join(hobbies)}")
+
+
     
 
 
