@@ -145,6 +145,53 @@ else:
     print(f"\n{name}, age {age}, enjoys: {', '.join(hobbies)}")
 
 
+    class Person:
+        def __init__(self, name, age):
+            self.name = name
+            self.age = age
+
+        def introduce(self):
+            print(f"Hi, I'm {self.name}, age {self.age}")
+
+
+    class Student(Person):
+        def __init__(self, name, age, branch):
+            super().__init__(name, age)  # calls Person's __init__
+            self.branch = branch
+            self.grades = []
+
+        def add_grade(self, grade):
+            self.grades.append(grade)
+
+        def introduce(self):  # overriding parent method
+            super().introduce()
+            print(f"I study {self.branch}")
+
+        def gpa(self):
+            return sum(self.grades) / len(self.grades) if self.grades else 0
+
+
+    class Teacher(Person):
+        def __init__(self, name, age, subject):
+            super().__init__(name, age)
+            self.subject = subject
+
+        def introduce(self):
+            super().introduce()
+            print(f"I teach {self.subject}")
+
+
+    # Using them
+    people = [
+        Student("Aayush", 18, "AI/ML"),
+        Teacher("Mr. Sharma", 45, "Mathematics")
+    ]
+
+    for p in people:
+        p.introduce()
+        print()
+
+
     
 
 
