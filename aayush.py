@@ -2,35 +2,61 @@ print("helloworld")
 
 print("aayush")
 
-#user input= The info which user provide. input is always in string form so to do arethamatic or anything typecast it.
+#Arethamatic and maths
 
-name=input("what is your friends name? : ")
-age=input("what is your friends age? : ")
+friends=10
 
-print(f"Hello {name}")
+#friends -= 1
+#friends += 1
 
-if int(age)<18:
-    print("you are okay")
-else:
-    print("you are too old")
+#friends *=3
+#friends **=2
 
-age=int(age)
-age=age+1
-print(f"Happy birthday {name}! You are now {age}.")
+#friends /=3
+friends %=4
 
-#EXERCISE 1 : area of quadrilateral calculator
+print(friends)
 
-length=int(input("What is the qudrilaterals length? :"))
-breadth=int(input("What is the quadrilaterals breadth? :"))
+x=1.8
+y=-4
+z=6.28
 
-area=length*breadth
-print(f"Your quadrilateral area is : {area}")
+value=round(x)
+value=abs(y)
+value=pow(y,3)
 
-#EXEECISE 2 : Shopping cart calculator
+print(value)
 
-item=input("What would you like to buy? :")
-price=float(input("What is the price of the item? :"))
-quantity=int(input("How many would you like to buy? :"))
+import math
 
-total=price*quantity
-print(f"Your total comes to : {total}")
+print(math.pi)
+print(math.e)
+
+#result=math.sqrt(z)
+result=math.ceil(3.7)
+#result=math.floor(3.7)
+print(result)
+
+#EXERCIES 3 Circumference of circle
+
+Radius=float(input("What is the Radius of the circle? :"))
+
+w = 2 * math.pi * Radius
+
+print(f"The circumference of the circle is: {round(w, 2)}")
+
+#EXERCISE 4  Area of circle
+
+radius=float(input("What is the Radius of the circle? :"))
+
+radius **=2
+area = math.pi * radius  #pow(radius,2)
+
+print(f"Area of circle is : {round(area , 2)}")
+
+a=float(input("Enter the value of a: "))
+b=float(input("Enter the value of b: "))
+
+c=math.sqrt( pow(a,2) + pow(b,2))
+
+print(f"THe value of c is : {round(c,2)}")
