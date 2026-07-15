@@ -2,20 +2,35 @@ print("helloworld")
 
 print("aayush")
 
-#typecasting= conversion of one data type to another data type. you can use name=bool(name) to see if there is any input or not
+#user input= The info which user provide. input is always in string form so to do arethamatic or anything typecast it.
 
-name="Aayush"
-age=78
-marks=7.8
-is_under_18=True
+name=input("what is your friends name? : ")
+age=input("what is your friends age? : ")
 
-print(type(marks))
+print(f"Hello {name}")
 
-age=float(age)
-print(age)
+if int(age)<18:
+    print("you are okay")
+else:
+    print("you are too old")
 
-marks=int(marks)
-print(marks)
+age=int(age)
+age=age+1
+print(f"Happy birthday {name}! You are now {age}.")
 
-name=bool(name)
-print(name)
+#EXERCISE 1 : area of quadrilateral calculator
+
+length=int(input("What is the qudrilaterals length? :"))
+breadth=int(input("What is the quadrilaterals breadth? :"))
+
+area=length*breadth
+print(f"Your quadrilateral area is : {area}")
+
+#EXEECISE 2 : Shopping cart calculator
+
+item=input("What would you like to buy? :")
+price=float(input("What is the price of the item? :"))
+quantity=int(input("How many would you like to buy? :"))
+
+total=price*quantity
+print(f"Your total comes to : {total}")
