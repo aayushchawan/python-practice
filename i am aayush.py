@@ -222,6 +222,12 @@ else:
         print(account)
 print("linux first line of code")
 
+#From today i start python on linux
+
+
+
+
+
 
     
 
